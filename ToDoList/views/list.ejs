@@ -1,0 +1,35 @@
+<%- include("header") -%>
+
+<div class="box" id="heading">
+        <h1>
+                <%= ListTitle %>
+        </h1>
+</div>
+
+<ul>
+        <form action="/delete" method="post">
+                <div class="box">
+                        <% newListItemz.forEach( (item)=>{ %>
+                                <div class="item">
+                                        <input type="checkbox" onchange="this.form.submit()"  value="<%= item._id %>"  name="checkbox">
+                                        <p>
+                                                <%= item.name %>
+                                        </p>
+                                </div>
+                                <input type="hidden" name="listName" value="<%= ListTitle %>"> </input>
+                
+                                <% }); %>
+                
+                </div>
+                
+        </form>
+</ul>
+
+
+<form class="box item" action="/" method="post">
+        <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
+        <!-- A name:value pair is generated in the below line which is used to differentiate the calls also this value is space sensitive...-->
+        <button type="submit" name="list" value="<%= ListTitle %>" >+</button>
+</form>
+
+<%- include("footer") -%>

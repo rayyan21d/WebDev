@@ -1,0 +1,65 @@
+
+
+
+body {
+
+    background-color: #EAF6F6;
+
+}
+
+hr {
+
+    background-color: white;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 5px;
+    border-color: black;
+    width: 5%;
+
+}
+
+
+h3 {
+
+    color: #66BFBF
+}
+
+/*Class selector*/
+.tommy  {
+
+    height:80%;
+    width: 60%;
+    orientation: flip;
+
+}
+
+/*ID Selector*/
+
+
+#heading   {
+
+    height:500px;
+    color: brown;
+    width: 150px;
+    orientation: flip;
+
+}
+/* 
+.tommy:hover{
+
+    height: 150%;
+    width: 100%;
+    orientation:landscape;
+
+}
+ */
+
+
+
+
+
+
+
+
+
+

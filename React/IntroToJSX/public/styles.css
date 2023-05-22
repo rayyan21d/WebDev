@@ -1,0 +1,22 @@
+.heading {
+  size: 250px;
+  color: red;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  filter: grayscale();
+}
+
+img:hover {
+  width: 200px;
+  height: 200px;
+  box-shadow: black;
+  filter: none;
+}
+
+.gallery {
+  stroke-width: 10px;
+  border-color: cadetblue;
+}
